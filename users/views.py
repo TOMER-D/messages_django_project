@@ -48,7 +48,7 @@ def json_logout(request):
         return JsonResponse(data={"error": "unexpected error for logout action"}, status=500)
 
 
-@require_http_methods(["POST"])
+@require_http_methods(["POST", "GET"])
 def json_login(request):
     data = utils.funcs.read_request(request=request)
     username = data.get('username')

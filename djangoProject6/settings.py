@@ -85,8 +85,9 @@ LOGGING = {
 }
 
 
-LOGIN_REDIRECT_URL = '/'
+
 ROOT_URLCONF = 'djangoProject6.urls'
+LOGIN_URL = '/users/login'
 
 TEMPLATES = [
     {

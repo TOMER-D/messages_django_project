@@ -18,8 +18,8 @@ class Message(models.Model):
         if to_save:
             self.save()
         return {
-            "sender": self.sender.id,
-            "receiver": self.receiver.id,
+            "sender_id": self.sender.id,
+            "receiver_id": self.receiver.id,
             "subject": self.subject,
             "body": self.body,
             "creation_date": self.creation_date
